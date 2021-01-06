@@ -1,0 +1,7 @@
+{
+  "name": "moneyger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
