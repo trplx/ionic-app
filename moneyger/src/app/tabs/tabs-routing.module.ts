@@ -8,27 +8,35 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'operation-list',
+        loadChildren: () => import('../operation-list/operation-list.module').then(m => m.OperationListModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'analytics',
+        loadChildren: () => import('../analytics/analytics.module').then(m => m.AnalyticsModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'add-operation',
+        loadChildren: () => import('../add-operation/add-operation.module').then(m => m.AddOperationModule)
+      },
+      {
+        path: 'dinamics',
+        loadChildren: () => import('../dinamics/operation-list.module').then(m => m.OperationListModule)
+      },
+      {
+        path: 'settings',
+        loadChildren: () => import('../settings/settings.module').then(m => m.SettingsModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/operation-list',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/operation-list',
     pathMatch: 'full'
   }
 ];
