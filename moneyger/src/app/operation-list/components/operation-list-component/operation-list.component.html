@@ -17,11 +17,13 @@
         </div>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option (click)="toDetail(item)">
-            <ion-icon name="information-circle-outline"></ion-icon>
+        <ion-item-option (click)="delete(item)" color="primary">
+            <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+            <!-- Удалить -->
         </ion-item-option>
-        <ion-item-option (click)="edit(item)">
-            <ion-icon name="create-outline"></ion-icon>
+        <ion-item-option (click)="edit(item)" color="primary">
+            <ion-icon name="pencil-outline" slot="icon-only"></ion-icon>
+            <!-- Редактировать -->
         </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>

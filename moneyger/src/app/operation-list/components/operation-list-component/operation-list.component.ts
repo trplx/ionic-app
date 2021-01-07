@@ -5,7 +5,7 @@ import { IOperation } from '../../../../models/operation.interface';
 @Component({
   selector: 'operation-list',
   templateUrl: 'operation-list.component.html',
-  // styleUrls: ['operation-list.page.scss']
+  styleUrls: ['operation-list.component.scss']
 })
 export class OperationListComponent {
 
